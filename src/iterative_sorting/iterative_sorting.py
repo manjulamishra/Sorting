@@ -13,28 +13,23 @@ def selection_sort( arr ):
             temp = arr[j]
             arr[j] = arr[cur_index]
             arr[cur_index] = temp
-   
-
-
-
-        # TO-DO: swap
-
-
-
-
     return arr
 
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
-    for _ in range(0,100):
+    sorted = True
+    while sorted:
+        sorted = False
         for i in range(0,len(arr)-1):
             if arr[i+1] < arr[i]:
                 temp = arr[i]
                 arr[i] = arr[i+1]
                 arr[i+1] = temp
-
+                sorted = True  
     return arr
+
+
 
 
 # STRETCH: implement the Count Sort function below
